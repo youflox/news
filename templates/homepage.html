@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{%block title%} News {% endblock title%}
+
+{% block head%}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap" rel="stylesheet">
+
+
+{%endblock head%}
+{%block body%}
+
+<div class="test" style="height:200px;">
+</div>
+
+<div class="carousel">
+        {% for article in carousel %}
+            <span class="carousel-span"><img src="http://homz.pythonanywhere.com{{article.image}}" alt="">
+                <a href="" ><h3>{{article.title}}</h3></a></span>
+        {% endfor %}
+
+    <span class="carousel-span"><img src="https://indianmarketview.com/wp-content/uploads/news.png" alt="">
+        <a href="" ><h3>Prime Minister scheme which allowed borrowers to not pay loan instalments between March and August,</h3></a></span>
+
+</div>
+
+<div class="headlines">
+    <div class="stories-ls">
+
+        {%for list in top_list%}
+        <span class="stories-ls-span"><img src="http://homz.pythonanywhere.com/{{list.image}}" alt="">
+            <h4><a href="" >{{list.title}}</a></h4> </span>
+        {%endfor%}
+
+    </div>
+
+
+    <div class="head-ls">
+
+        {%for list in main_list%}
+        <div class="head-ls-div"><img src="http://homz.pythonanywhere.com{{list.image}}" alt="">
+            <span class="head-ls-span"><h4><a target="_blank" href="">{{list.title}}</a></h4>
+                <p class="author">Edited by :<a href="">{{list.autho}}</a> |{{list.date}}</p>
+                <p class="desc">{{list.description}}</p></span></div> <hr>
+
+        {%endfor%}
+
+        </div>
+    </div>
+
+</div>
+
+{%endblock body%}

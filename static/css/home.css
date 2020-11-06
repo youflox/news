@@ -1,0 +1,99 @@
+
+
+body{
+    width : 75vw;
+    margin : auto;
+    font-family:'Roboto',sans-serif;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:  10px;
+    font-size: 15px;
+}
+
+.carousel img{
+    height: 200px;
+    width : 400px;
+    margin-right : 10px;
+}
+
+
+.carousel-span{
+    width : 30%;
+    margin : 10px;
+}
+
+.headlines{
+    display: flex;
+    flex-direction : row;
+    margin-bottom: 20px;
+}
+
+.stories-ls{
+    width : 25%;
+    margin-right : 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.stories-ls-span{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.stories-ls img{
+    height : 80px;
+    width: 80px;
+    margin : 10px;
+}
+
+.head-ls{
+    width : 55%;
+    margin: 10px;
+}
+
+.head-ls h4, p, a{
+    margin:5px;
+    text-decoration: none;
+}
+
+.author{
+    font-size: 12px;
+}
+
+.head-ls-div{
+    display:flex;
+    flex-direction : row;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+.head-ls a, .stories-ls a, .carousel a{
+    color: #326891;
+}
+
+.head-ls .desc{
+    font-size: 16px;
+}
+
+.head-ls-span{
+    display:flex;
+    flex-direction : column;
+    margin : 5px;
+    font-size: 20px;
+}
+
+.head-ls img{
+    height: 140px;
+    width : 140px;
+    margin : auto;
+}
+
+.add{
+    background-color: grey;
+    height:300px;
+    width: 300px
+}
